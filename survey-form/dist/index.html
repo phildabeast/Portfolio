@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="main">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Libre+Baskerville|Noto+Serif&display=swap" rel="stylesheet">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <h1 id="title" align='center'> University of Virginia Survey Form </h1>
+
+  <p id=description align='center'> A survey for your experience at the University of Virginia</p>
+
+  <form id=survey-form>
+
+    <label id=name-label for=name class="required">Name</label>
+    <input class="length" id=name type=text placeholder="Enter your Name" required>
+
+    <label class="format required" id=email-label for=email>Email </label>
+    <input class="length" id=email type="email" placeholder="Enter your email" required>
+
+    <label class="format required" id=number-label for=number>Graduation Year</label>
+    <input class="length" id=number type=number placeholder="Year" min="2020" max="2024" required>
+
+    <label class="format"> Race or Ethnicity </label>
+    <select class="length" id=dropdown>
+      <option value=White> White</option>
+      <option value="Hispanic or Latino"> Hispanic or Latino </option>
+      <option value=Black> Black or African American </option>
+      <option value="Native American"> Native American or American Indian</option>
+      <option value=Asian> Asian or Pacific Islander </option>
+      <option value=other>Other</option>
+    </select>
+
+    <label id=radio class="format" for=radio-button> Do you think race is a factor of your college experience at UVA? </label>
+    <input id=radio-button type=radio name=group value=Yes class="line"> Yes
+    </br>
+    <input id=radio-button type=radio name=group value=maybe> Maybe
+    </br>
+    <input id=radio-button type=radio name=group value=No> No
+    </br>
+
+    <label id=checkbox class="format">What do you do like to do at UVA? (Click all that apply) </label>
+    <input type=checkbox name=check value="1" class="size"> Clubs
+    </br>
+    <input type=checkbox name=check value="2" class="size"> Fraternity
+    </br>
+    <input type=checkbox name=check value="3" class="size"> Bars
+    </br>
+    <input type=checkbox name=check value="4" class="size"> Intramural Sports or Varsity Sports
+    </br>
+    <input type=checkbox name=check value="5" class="size"> Playing an instrument
+    </br>
+    <input type=checkbox name=check value="6" class="size"> Sports games
+    </br>
+    <input type=checkbox name=check value="7" class="size"> Reading
+    </br>
+    <input type=checkbox name=check value="8" class="size"> Going outdoors
+    </br>
+    <input type=checkbox name=check value="9" class="size"> Streaking the Lawn
+    </br>
+    <input type=checkbox name=check value="10" class="size"> Acapella
+
+    <p class=""> If you would like to share anything else </p>
+
+    <textarea rows="5" wrap="hard" align:"center" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Enter your comments here...   
+</textarea>
+    </br>
+
+    <button id=submit type=submit> Submit</button>
+
+  </form>
+
+</main>
+<!-- partial -->
+  
+</body>
+</html>
